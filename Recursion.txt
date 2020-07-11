@@ -1,0 +1,59 @@
+Recursion in java is a process in which a method calls itself continuoslu
+A method in java that calls itself is called recursive method
+It makes the code compact but complex to understand
+
+Recursion is much better than iteration for problems that can be broken down into multiple, smaller pieces. 
+Precisely, in divide and conquer method using recursion can reduce your problem size at every step 
+and would take less time than a naive iterative approach. 
+Recursion is simpler to implement, and it is usually more 'elegant' than iterative solutions.
+
+Recursion can reduce time complexity
+Recursion adds clarity and reduces the time needed to write and debug code
+Recursion is better at tree traversal
+
+Recursion uses more memory
+Recursion can be slow
+
+Iteration: A function repeats a defined process until a condition fails. 
+This is usually done through a loop, such as a for or while loop with a counter 
+and comparative statement making up the condition that will fail. 
+An infinite loop for iteration occurs when the condition never fails.
+
+Recursion: Instead of executing a specific process within the function, 
+the function calls itself repeatedly until a certain condition is met (this condition being the base case). 
+The base case is explicitly stated to return a specific value when a certain condition is met. 
+An infinite recursive loop occurs when the function does not reduce its input in a way 
+that will converge on the base case.
+Ex:
+	public class RecursionExample1 {
+		static void p() {
+			System.out.println("Hello");
+			p();
+		}
+		
+		public static void main(String[] args) {
+			p();
+		}
+	}
+	Output: 	hello	
+				hello
+	
+	public class RecursionExample2{
+		static int count = 0;
+		static void p() {
+			count++;
+			if(count <= 5) {
+				System.out.println("hello " + count);
+				p();
+			}
+		}
+		
+		public static void main(String[] args) {
+			p();
+		}
+	}
+	Output:		hello 1
+				hello 2
+				hello 3
+				hello 4
+				hello 5

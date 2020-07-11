@@ -1,0 +1,45 @@
+Interfaces:
+	specifies methods that a particular class that implements the interface must implements
+	
+	Abstract class can have member variables that are inherited, something that can't be done in interface
+	Interfaces can have variables, but they are all public static final variables, which essentially are gonna
+	be constant values that should never change, with a static scope. You can't instantiate an interface
+	Interfaces also cannot have constructors, but abstract classes can
+	All methods over the interface are automatically public, whereas the methods of an abtract class can have 
+	any visiblity
+	Abstract classes can have defined methods(methods with an implementation) whereas all methods in an interface is 
+	abstract
+	
+	Similarities:
+		You cannot instantiate them, and they may contain a mix of methods declared with or
+		without an implementation
+		
+	Differents:
+		Abstract class can extend only one parent class but it can implement multiple interfaces
+		When an abstract class is subclassed, the subclass usually provides implementation for
+		all of the abstract methods in its parent class
+		
+	Using abstract when: 
+		share code among several closely related classes. Ex: Animal - with fields name, age...)
+		
+	Summary:
+		The purpose of an abstract class is to provide a common definition of a base class that 
+		multiple derived classes can share
+		
+	Interfaces:
+		is just a declaration of methods of an Class, it's not the implementation
+		All methods in interface are automatically public and abstract
+		An Interface can extend another interface
+		
+	Interface are more flexible and can deal with a lot more stress on the design of your program than 
+	the implementation
+	
+	Using Interface when:
+		You expect that unrelated classes will implement your interface
+		For example: the interface Comparable and Cloneable are implemented by many unrelated classes
+		You want to specify the behavior of a particular data type, but you are not concerned about 
+		who implements its behavior
+		You want to separate different behavior
+	
+	
+	
