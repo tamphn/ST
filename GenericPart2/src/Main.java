@@ -29,6 +29,15 @@ public class Main {
         sdCharger.matchResult(fremantle,2,3);
         sdCharger.matchResult(baseballTeam,1,1);
 
+        System.out.println("Rankings ");
+        System.out.println(sdCharger.getName() + ": " + sdCharger.ranking());
+        System.out.println(baseballTeam.getName() + ": " + baseballTeam.ranking());
+        System.out.println(soccerTeam.getName() + ": " + soccerTeam.ranking());
+
+        System.out.println(sdCharger.compareTo(hawthorne));
+        System.out.println(sdCharger.compareTo(fremantle));
+
+
 
     }
 }
